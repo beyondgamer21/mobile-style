@@ -919,16 +919,7 @@ body {
     font-weight: 600;
 }
 
-.additional-actions {
-    display: flex;
-    gap: var(--spacing-md);
-    justify-content: center;
-}
 
-.additional-actions .btn {
-    flex: 1;
-    max-width: 200px;
-}
 
 /* Nav logo link styling */
 .nav-logo a {
@@ -1381,13 +1372,7 @@ body {
         grid-template-columns: 1fr;
     }
     
-    .additional-actions {
-        flex-direction: column;
-    }
-    
-    .additional-actions .btn {
-        max-width: none;
-    }
+
     
     .spec-item {
         flex-direction: column;

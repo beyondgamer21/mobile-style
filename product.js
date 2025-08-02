@@ -164,8 +164,6 @@ function initNavigation() {
 // Product interactions
 function initProductInteractions() {
     const buyNowBtn = document.getElementById('buy-now-btn');
-    const wishlistBtn = document.querySelector('.btn:has([data-feather="heart"])');
-    const shareBtn = document.querySelector('.btn:has([data-feather="share-2"])');
     
     // Buy now button
     buyNowBtn.addEventListener('click', (e) => {
@@ -178,31 +176,6 @@ function initProductInteractions() {
             window.open('https://www.apple.com/store', '_blank');
         }, 1500);
     });
-    
-    // Wishlist button
-    if (wishlistBtn) {
-        wishlistBtn.addEventListener('click', () => {
-            const productName = document.getElementById('product-name').textContent;
-            showAlert(`${productName} added to wishlist!`, 'success');
-        });
-    }
-    
-    // Share button
-    if (shareBtn) {
-        shareBtn.addEventListener('click', () => {
-            if (navigator.share) {
-                navigator.share({
-                    title: document.getElementById('product-name').textContent,
-                    text: document.getElementById('product-description').textContent,
-                    url: window.location.href
-                });
-            } else {
-                // Fallback: copy to clipboard
-                navigator.clipboard.writeText(window.location.href);
-                showAlert('Product link copied to clipboard!', 'success');
-            }
-        });
-    }
 }
 
 // Alert function

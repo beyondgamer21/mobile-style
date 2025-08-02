@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Styles - Where Innovation Meets Style</title>
+    <meta name="description" content="Premium mobile devices and accessories with innovative design and cutting-edge technology.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="logo-animation">
+                <h1 class="loading-logo">Mobile Styles</h1>
+                <div class="loading-tagline">Where Innovation Meets Style</div>
+            </div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Mobile Styles</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="animated-bg"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Where Innovation</span>
+                    <span class="title-line">Meets Style</span>
+                </h1>
+                <p class="hero-description">
+                    Discover the future of mobile technology with our premium collection 
+                    of smartphones and accessories designed for the modern lifestyle.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        <span>Explore Products</span>
+                        <i data-feather="arrow-right"></i>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <span>Learn More</span>
+                        <i data-feather="play"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-phone">
+                    <img src="https://pixabay.com/get/g47835d5528318a70fd624467743e1bf63687bf7a7da73bf22444fbf0926166dd1beb38325c68a489bb81cc9e10aa618d40723bd1e647f50531a276f8dd0720cd_1280.jpg" alt="Premium Smartphone" class="hero-phone-img">
+                    <div class="hero-phone-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Collection</h2>
+                <p class="section-description">
+                    Carefully curated devices that redefine what's possible
+                </p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-tilt>
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g47835d5528318a70fd624467743e1bf63687bf7a7da73bf22444fbf0926166dd1beb38325c68a489bb81cc9e10aa618d40723bd1e647f50531a276f8dd0720cd_1280.jpg" alt="iPhone Pro Max">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary product-btn">
+                                <i data-feather="shopping-cart"></i>
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">iPhone 15 Pro Max</h3>
+                        <p class="product-description">The ultimate iPhone experience</p>
+                        <div class="product-price">$1,199</div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-tilt>
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/gbca8aedff7a56c1e1e467f59fc875d7f5f8dcca6638072836b59144772d906ad465f279f8a451fa0768b114b8bfdaf09c7fb228e5f0dd15bb40b42a97214b2c2_1280.jpg" alt="Samsung Galaxy">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary product-btn">
+                                <i data-feather="shopping-cart"></i>
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Samsung Galaxy S24 Ultra</h3>
+                        <p class="product-description">Epic in every way</p>
+                        <div class="product-price">$1,299</div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-tilt>
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/ged5ac6869d9b6b75abd929a79425ba66b3eeb52295cd35892085d6648d09718a641ba8097a09330cc4d8d06f23bbb2bb4728149839452d233c538315988d55f9_1280.jpg" alt="Google Pixel">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary product-btn">
+                                <i data-feather="shopping-cart"></i>
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Google Pixel 8 Pro</h3>
+                        <p class="product-description">AI-powered photography</p>
+                        <div class="product-price">$999</div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-tilt>
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/gd6e55f01c5c47339dbc8be4efd67906402096c5eb0b6efb804fb62be4599d20da15b1bc5c5a26d57352e2d5654afc986357510c4d1d08eb1d06209478a8bc146_1280.jpg" alt="OnePlus">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary product-btn">
+                                <i data-feather="shopping-cart"></i>
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">OnePlus 12</h3>
+                        <p class="product-description">Never settle for less</p>
+                        <div class="product-price">$899</div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-tilt>
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g7b2f6cc87bf6a428aa3f28764af17414f729e74a980bd19354ea311a07c6c666610f469cbdac2aaa5f1fe8f96027c1c3aea90919c2c3d50278c05ec52cd8de6c_1280.jpg" alt="Xiaomi">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary product-btn">
+                                <i data-feather="shopping-cart"></i>
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Xiaomi 14 Ultra</h3>
+                        <p class="product-description">Photography redefined</p>
+                        <div class="product-price">$799</div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-tilt>
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/ge909c76dc23b40c4f1e87a8e14e2677fafd931d9e130c7aa0720104dd1fcb871b0d36cefe8222dc6bfdd84fdd4c0f423cb4911edcf051e4b34507905fc2965f6_1280.jpg" alt="Nothing Phone">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary product-btn">
+                                <i data-feather="shopping-cart"></i>
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Nothing Phone (2a)</h3>
+                        <p class="product-description">Transparent innovation</p>
+                        <div class="product-price">$399</div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-tilt>
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g50bae3bac7b80c2080a106c6069e40ec6b5326440b4fb073af5ffbd591a49d037452c6bbef1b22660dee6a5b59ea827902332404d5ccfd48cc9a0dcf571f4a98_1280.jpg" alt="Motorola Edge">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary product-btn">
+                                <i data-feather="shopping-cart"></i>
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Motorola Edge 50 Pro</h3>
+                        <p class="product-description">Edge of innovation</p>
+                        <div class="product-price">$699</div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-tilt>
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g6c745f3f5714acf1dadf78b5c0bf95ec502ddec7ce826609060bdfd1e628da82b8fb2b932395d24eba9580afbcb0746f2773b2da0d4de8bce223b8f02a35a209_1280.jpg" alt="Sony Xperia">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary product-btn">
+                                <i data-feather="shopping-cart"></i>
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Sony Xperia 1 VI</h3>
+                        <p class="product-description">Cinema in your pocket</p>
+                        <div class="product-price">$1,099</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Mobile Styles</h2>
+                    <div class="about-description">
+                        <p>
+                            Founded on the belief that technology should be beautiful, functional, and accessible, 
+                            Mobile Styles has been at the forefront of mobile innovation since our inception.
+                        </p>
+                        <p>
+                            We partner with the world's leading manufacturers to bring you the most cutting-edge 
+                            devices, carefully curated for those who demand excellence in every aspect of their 
+                            digital lifestyle.
+                        </p>
+                        <p>
+                            Our mission is simple: to connect you with technology that doesn't just work, 
+                            but inspires and empowers you to achieve more.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Premium Devices</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Customer Support</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image">
+                        <img src="https://pixabay.com/get/gf81677d47c534f006dbc155f4e42bf344fc7d2fc09016a798da2cce8e31bf8403d2aea68a84db123d55b93162b74cfde32de568b149a8e4906316b041f9d8188_1280.jpg" alt="Mobile Technology">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Have questions? We'd love to hear from you.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-feather="map-pin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Visit Us</h3>
+                            <p>123 Innovation Street<br>Tech District, San Francisco, CA 94105</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-feather="phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>+1 (555) 123-4567<br>Mon-Fri 9AM-6PM PST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i data-feather="mail"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>hello@mobilestyles.com<br>support@mobilestyles.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i data-feather="send"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Mobile Styles</h3>
+                    <p class="footer-tagline">Where Innovation Meets Style</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Cases & Protection</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Mobile Styles. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

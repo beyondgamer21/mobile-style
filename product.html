@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Mobile Styles</title>
+    <meta name="description" content="Detailed information about premium mobile devices at Mobile Styles.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <h2>Mobile Styles</h2>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#products" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="back-button">
+                <a href="index.html#products" class="btn btn-secondary">
+                    <i data-feather="arrow-left"></i>
+                    <span>Back to Products</span>
+                </a>
+            </div>
+            
+            <div class="product-detail-content">
+                <div class="product-image-section">
+                    <div class="product-main-image">
+                        <img id="product-image" src="" alt="Product Image" class="main-product-img">
+                        <div class="product-image-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="product-info-section">
+                    <div class="product-header">
+                        <h1 id="product-name" class="product-title">Product Name</h1>
+                        <div id="product-price" class="product-price-large">$0</div>
+                    </div>
+                    
+                    <div class="product-description-section">
+                        <h3>About This Device</h3>
+                        <p id="product-description" class="product-desc-text">Product description will appear here.</p>
+                        
+                        <div class="product-features">
+                            <h4>Key Features</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <i data-feather="smartphone"></i>
+                                    <span>Premium Design</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i data-feather="camera"></i>
+                                    <span>Advanced Camera</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i data-feather="battery"></i>
+                                    <span>Long Battery Life</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i data-feather="wifi"></i>
+                                    <span>5G Connectivity</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-specs">
+                            <h4>Specifications</h4>
+                            <div class="specs-list">
+                                <div class="spec-item">
+                                    <span class="spec-label">Display:</span>
+                                    <span class="spec-value">6.7" Super Retina XDR</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Storage:</span>
+                                    <span class="spec-value">128GB / 256GB / 512GB</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Camera:</span>
+                                    <span class="spec-value">Pro Camera System</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Connectivity:</span>
+                                    <span class="spec-value">5G, Wi-Fi 6E, Bluetooth 5.3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <div class="buy-now-section">
+                            <p class="store-notice">Available at our premium retail partners</p>
+                            <a href="#" class="btn btn-primary btn-large" id="buy-now-btn">
+                                <span>Buy Now at Store</span>
+                                <i data-feather="external-link"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="additional-actions">
+                            <button class="btn btn-secondary">
+                                <i data-feather="heart"></i>
+                                <span>Add to Wishlist</span>
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i data-feather="share-2"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Mobile Styles</h3>
+                    <p class="footer-tagline">Where Innovation Meets Style</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>123 Innovation Street<br>San Francisco, CA 94105</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mobile Styles. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="product.js"></script>
+</body>
+</html>

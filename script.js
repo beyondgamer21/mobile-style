@@ -261,17 +261,26 @@ function showAlert(message, type = 'success') {
 function initProductCards() {
     const productCards = document.querySelectorAll('.product-card');
     
-    productCards.forEach(card => {
-        const buyButton = card.querySelector('.product-btn');
-        
-        buyButton.addEventListener('click', () => {
+    productCards.forEach((card, index) => {
+        // Make entire card clickable
+        card.addEventListener('click', () => {
             const productName = card.querySelector('.product-name').textContent;
-            showAlert(`${productName} added to cart!`, 'success');
+            const productPrice = card.querySelector('.product-price').textContent;
+            const productDescription = card.querySelector('.product-description').textContent;
+            const productImage = card.querySelector('.product-image img').src;
+            
+            // Create product page URL with parameters
+            const productSlug = productName.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+            const productPageUrl = `product.html?name=${encodeURIComponent(productName)}&price=${encodeURIComponent(productPrice)}&description=${encodeURIComponent(productDescription)}&image=${encodeURIComponent(productImage)}`;
+            
+            // Navigate to product page
+            window.location.href = productPageUrl;
         });
         
         // Enhanced hover effect
         card.addEventListener('mouseenter', () => {
             card.style.transform = 'translateY(-15px) scale(1.02)';
+            card.style.cursor = 'pointer';
         });
         
         card.addEventListener('mouseleave', () => {

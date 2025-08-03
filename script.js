@@ -142,6 +142,11 @@ function initScrollAnimations() {
     });
 }
 
+// Initialize EmailJS
+(function() {
+    emailjs.init("ljozlr7bHniqnV_P9"); // Replace with your EmailJS public key
+})();
+
 // Contact form functionality
 function initContactForm() {
     const form = document.getElementById('contact-form');
@@ -166,19 +171,35 @@ function initContactForm() {
             return;
         }
         
-        // Simulate form submission
+        // Send email using EmailJS
         const submitButton = form.querySelector('button[type="submit"]');
         const originalText = submitButton.innerHTML;
         
         submitButton.innerHTML = '<span>Sending...</span>';
         submitButton.disabled = true;
         
-        setTimeout(() => {
-            showAlert('Thank you for your message! We\'ll get back to you soon.', 'success');
-            form.reset();
-            submitButton.innerHTML = originalText;
-            submitButton.disabled = false;
-        }, 2000);
+        // EmailJS parameters
+        const templateParams = {
+            from_name: name,
+            from_email: email,
+            message: message,
+            to_name: 'Mobile Styles Team'
+        };
+        
+        emailjs.send('service_a4hxo43', 'template_ziyzcvf', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                showAlert('Thank you for your message! We\'ll get back to you soon.', 'success');
+                form.reset();
+            })
+            .catch(function(error) {
+                console.log('FAILED...', error);
+                showAlert('Sorry, there was an error sending your message. Please try again.', 'error');
+            })
+            .finally(function() {
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+            });
     });
 }
 

@@ -173,7 +173,7 @@ function initProductInteractions() {
         
         // Simulate redirect to store
         setTimeout(() => {
-            window.open('https://www.apple.com/store', '_blank');
+            window.open('https://maps.app.goo.gl/QQoVkDM4K8K2P9Es8', '_blank');
         }, 1500);
     });
 }
